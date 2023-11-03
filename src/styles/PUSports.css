@@ -1,0 +1,130 @@
+.sports-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 0 10px #fff, 0 0 25px #fff, 0 0 50px #6cc3d5, 0 0 100px #6cc3d5;
+  overflow: hidden;
+}
+
+.sports-card img {
+  max-width: 70%;
+}
+
+.sports-card h1,
+.sports-card p {
+  margin: 15px 0;
+  color: black;
+  font-weight: bolder;
+}
+
+
+.flip-card {
+  perspective: 1000px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.flip-card-front, 
+.flip-card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.flip-card.flipped .flip-card-front {
+  transform: rotateY(180deg);
+}
+
+.flip-card.flipped .flip-card-back {
+  transform: rotateY(0deg);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.description {
+  text-align: right;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #d1d1d1;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info-button {
+  background-color: #6cc3d5;
+  color: black;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 110px;
+}
+
+.info-button:hover {
+  background-color: #4faabf;
+}
+
+
+.btn-primary {
+    background-color: #6cc3d5; /* Change to your desired color */
+    border: none;
+    /* ... any other styles you'd like ... */
+}
+
+
+.row {
+  display: flex;
+  align-items: stretch; 
+}
+
+.description {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}

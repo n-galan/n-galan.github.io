@@ -1,0 +1,26 @@
+.carousel-inner {
+    width: 600px;   /* fixed width */
+    height: 400px;  /* fixed height */
+    margin: 0 auto; /* centers the carousel container horizontally */
+    text-align: center;
+}
+
+.carousel-item {
+    display: none; /* By default, items are hidden */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-item.active {
+    display: flex; /* Only the active item is displayed */
+}
+
+.carouselImage {
+    width: 200px;          /* fixed width */
+    height: 300px;         /* fixed height */
+    object-fit: cover;     /* this ensures the image covers the dimensions without distortion */
+    display: block;        /* removes any default spacing around the image */
+    margin: 0 auto;        /* centers the image horizontally */
+    object-position: center; /* keeps the center of the image in view */
+}

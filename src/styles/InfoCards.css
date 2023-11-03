@@ -1,0 +1,44 @@
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 15px #44D9E8, 0 0 25px #44D9E8, 0 0 35px #44D9E8, 0 0 45px #44D9E8;
+    }
+    50% {
+        box-shadow: 0 0 20px #44D9E8, 0 0 30px #44D9E8, 0 0 40px #44D9E8, 0 0 50px #44D9E8;
+    }
+    100% {
+        box-shadow: 0 0 15px #44D9E8, 0 0 25px #44D9E8, 0 0 35px #44D9E8, 0 0 45px #44D9E8;
+    }
+}
+
+/* Styling for the card */
+.glowing-card {
+    border-radius: 15px;
+    box-shadow: 0 0 15px #44D9E8, 0 0 25px #44D9E8, 0 0 35px #44D9E8, 0 0 45px #44D9E8;
+    transition: all 0.3s ease;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: glowing 1.5s infinite alternate;  /* Add this line for the glowing effect */
+}
+
+.glowing-card:hover {
+    box-shadow: 0 0 20px #44D9E8, 0 0 30px #44D9E8, 0 0 40px #44D9E8, 0 0 55px #44D9E8;
+}
+
+.glowing-card .card-title, .glowing-card .card-text {
+    color: #44D9E8;
+    margin-bottom: 10px;
+}
+
+.glowing-card button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+}

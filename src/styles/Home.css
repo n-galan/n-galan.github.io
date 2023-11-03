@@ -1,0 +1,87 @@
+.centeredHeading {
+    text-align: center;
+}
+
+.offerHeading {
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.offerHeading:hover {
+    color: #44D9E8;  /* Adjust this color if needed */
+}
+
+.arrow-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #000;  /* Arrow color */
+    margin: 10px auto;
+    cursor: pointer;  /* Making arrow clickable */
+}
+
+.arrow-down:hover {
+    border-top: 40px solid #44D9E8; /* Change color on hover */
+}
+
+.our-programs-heading {
+    font-size: 1.8rem;  /* Increase font-size */
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;  /* Center the heading */
+}
+
+.programDescription {
+    margin: 30px 0;  /* Add some vertical spacing */
+    font-size: 18px; /* Adjust size as per your preference */
+    text-align: center;
+}
+
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.centeredHeading {
+    color: black;
+    font-weight: bolder;
+}
+
+.programDescription {
+    color: black;
+    font-weight: bold;
+}
+
+.programsHeading {
+
+    color: #000;
+    font-weight: bolder;
+}
+
+.offerHeading {
+    color: #000;
+    font-weight: bolder;
+}
+
+.missionStatement {
+    color: #000;
+    font-weight: bolder;
+}
+
+.home-page {
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.5), lightblue, #78c2ad);
+    min-height: 100vh; */
+    /* background: #6cc3d5; */
+    background: lightgray;
+}

@@ -1,0 +1,58 @@
+.footer-container {
+    background-color: #78c2ad;
+    padding: 10px 0;
+    color: #ecf0f1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h4 {
+
+    color:black;
+    font-weight: bold;
+    
+}
+
+
+
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0;
+    border-top: 1px solid #e0f0eb;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social-list a {
+    color: #ecf0f1;
+    font-size: 20px;
+}
+
+.social-list a:hover {
+    color: #3498db;
+}
+
+
+.footer-sports {
+    background-color: #6cc3d5;  /* Color for the sports page */
+}
+
+.footer-default {
+    background-color: #78c2ad;  /* Default color for other pages */
+}
