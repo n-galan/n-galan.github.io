@@ -1,0 +1,24 @@
+.navbar-primary {
+    background-color: #78c2ad;
+}
+  
+.navbar-primary .nav-link {
+    color: black;
+    font-weight: bolder;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.navbar-sports {
+    background-color: #6cc3d5;  /* Replace with your desired color */
+    font-weight: bolder;
+    
+  }
+  
+  .navbar-default {
+    background-color: #78c2ad;  /* Replace with your default color */
+  }
+  
