@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Footer from './Footer'; // Assuming Footer.js is in the same directory
 
 
+
 // Your variable overrides go here, e.g.:
 // $h1-font-size: 3rem;
  import "bootswatch/dist/minty/bootstrap.min.css";
@@ -18,23 +19,25 @@ import Footer from './Footer'; // Assuming Footer.js is in the same directory
  function App() {
   return (
     <Router>
-      <div>
+      <div className="app-layout">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/sports" element={<Sports />} />
-          <Route path="/tech" element={<Tech />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* Add any other routes as necessary */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/sports" element={<Sports />} />
+            <Route path="/Tech" element={<Tech />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
   );
 }
+
 
 
 

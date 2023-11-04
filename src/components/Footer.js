@@ -6,10 +6,18 @@ const Footer = () => {
     const location = useLocation();
 
     // Determines the appropriate CSS class based on the current path
-    const footerClass = location.pathname === '/sports' ? 'footer-sports' : 'footer-default';
+    const footerClass = () => {
+        if (location.pathname === '/sports') {
+            return 'footer-sports';
+        } else if (location.pathname === '/tech') {
+            return 'footer-tech';
+        } else {
+            return 'footer-default';
+        }
+    }
 
     return (
-        <div className={`footer-container ${footerClass}`}>
+        <div className={`footer-container ${footerClass()}`}>
             <div className="footer-content">
                 <div className="footer-section">
                     <h4>About Us</h4>

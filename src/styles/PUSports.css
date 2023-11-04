@@ -124,7 +124,34 @@
 }
 
 .description {
-  display: flex;
+  /* display: flex;
   flex-direction: column; 
-  justify-content: space-between; 
+  justify-content: space-between;  */
+  height: 620px;
+  width: 600px;
+  padding: 20px;
+  /* border: 30px, 10px; */
+
+
+}
+
+/* .col-md-6 {
+  padding
+} */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.sports-card {
+  /* ... other styles ... */
+  align-self: flex-start; 
+}
+
+
+.card-container {
+  background-color: white;
 }
