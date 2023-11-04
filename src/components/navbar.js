@@ -18,6 +18,9 @@ const Navbar = () => {
       case '/sports':
           navbarClass += "navbar-sports";
           break;
+          case '/Tech':
+            navbarClass += "navbar-tech";
+            break;
       //... add cases for other paths if needed
       default:
           navbarClass += "navbar-default";  // Your default navbar style

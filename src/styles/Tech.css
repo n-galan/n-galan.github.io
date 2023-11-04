@@ -1,0 +1,70 @@
+/* Tech.css */
+/* Apply a general reset for box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* Align items stretch to make sure containers take full height */
+    padding: 20px;
+}
+
+.tech-description-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* This will make all cards in a pair stretch to the size of the tallest card */
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tech-card, .description-card {
+    flex: 1 0 calc(50% - 40px); /* Cards take up half of the container minus margins, no flex-grow */
+    height: auto; /* Height is set to auto */
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(239, 239, 239, 1), 0 0 25px rgba(239, 239, 239, 1), 0 0 50px #6cc3d5, 0 0 100px #672cdd;
+    color: black;
+    font-weight: bolder;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* This will distribute space within the card evenly */
+    align-items: center;
+}
+
+.tech-card img {
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.info-button {
+    background-color: #9178c2;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .tech-description-pair {
+        justify-content: space-around;
+    }
+
+    .tech-card, .description-card {
+        flex-basis: calc(33.333% - 40px); /* Adjust width to account for margins */
+        max-width: none; /* Allows flex-basis to take precedence */
+        height: 100%; /* Sets card height to be the same */
+    }
+}
