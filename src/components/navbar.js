@@ -18,9 +18,12 @@ const Navbar = () => {
       case '/sports':
           navbarClass += "navbar-sports";
           break;
-          case '/Tech':
+      case '/Tech':
             navbarClass += "navbar-tech";
             break;
+        case '/music':
+              navbarClass += "navbar-music";
+              break;
       //... add cases for other paths if needed
       default:
           navbarClass += "navbar-default";  // Your default navbar style
@@ -59,7 +62,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              PU Programs
+              Unbound Programs
             </span>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <Link to="/sports" className="dropdown-item">Sports Unbound</Link>

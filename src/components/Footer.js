@@ -11,7 +11,9 @@ const Footer = () => {
             return 'footer-sports';
         } else if (location.pathname === '/tech') {
             return 'footer-tech';
-        } else {
+        } else if (location.pathname === '/music') {
+            return 'footer-music';
+        }else {
             return 'footer-default';
         }
     }

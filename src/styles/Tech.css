@@ -22,12 +22,11 @@
 }
 
 .tech-card, .description-card {
-    flex: 1 0 calc(50% - 40px); /* Cards take up half of the container minus margins, no flex-grow */
-    height: auto; /* Height is set to auto */
-    background-color: white;
-    border-radius: 15px;
+    flex: 1; /* Make cards flexible with the ability to grow and shrink equally */
     margin: 20px;
     padding: 20px;
+    background-color: white;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(239, 239, 239, 1), 0 0 25px rgba(239, 239, 239, 1), 0 0 50px #6cc3d5, 0 0 100px #672cdd;
     color: black;
     font-weight: bolder;
@@ -63,8 +62,138 @@
     }
 
     .tech-card, .description-card {
-        flex-basis: calc(33.333% - 40px); /* Adjust width to account for margins */
+        flex: 1 0 calc(33.333% - 40px); /* Adjust width to account for margins */
         max-width: none; /* Allows flex-basis to take precedence */
-        height: 100%; /* Sets card height to be the same */
+        height: auto; /* Sets card height to be the same, adjust as necessary */
     }
 }
+/* Tech.css */
+/* Apply a general reset for box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* Align items stretch to make sure containers take full height */
+    padding: 20px;
+    background: black;
+}
+
+.tech-description-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* This will make all cards in a pair stretch to the size of the tallest card */
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tech-card, .description-card {
+    flex: 1; /* Make cards flexible with the ability to grow and shrink equally */
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(239, 239, 239, 1), 0 0 25px rgba(239, 239, 239, 1), 0 0 50px #6cc3d5, 0 0 100px #672cdd;
+    color: black;
+    font-weight: bolder;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* This will distribute space within the card evenly */
+    align-items: center;
+}
+
+.tech-card img {
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.info-button {
+    background-color: #9178c2;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    /* Increase the border-radius for roundness */
+    border-radius: 20px; /* This will make the button edges very rounded */
+
+
+     /* Glow effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  position: relative;
+  animation: glow-animation 2s infinite alternate;
+}
+
+
+/* Animation keyframes for glow effect */
+@keyframes glow-animation {
+  from {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.7);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(141, 124, 183, 0.9), 0 0 50px rgba(141, 124, 183, 0.9);
+  }
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .tech-description-pair {
+        justify-content: space-around;
+    }
+
+    .tech-card, .description-card {
+        flex: 1 0 calc(33.333% - 40px); /* Adjust width to account for margins */
+        max-width: none; /* Allows flex-basis to take precedence */
+        height: auto; /* Sets card height to be the same, adjust as necessary */
+    }
+}
+
+
+  
+.tech-intro {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+  }
+  
+  .tech-intro h2 {
+    color: #673ab7;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tech-intro p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .tech-intro {
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .tech-intro h2 {
+      font-size: 1.2rem; /* Slightly smaller to fit better on small screens */
+    }
+  
+    .tech-intro p {
+      font-size: 0.9rem; /* Slightly smaller to maintain readability */
+    }
+  }

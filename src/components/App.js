@@ -9,6 +9,8 @@ import Tech from './Tech';
 import Music from './Music';
 import Contact from './Contact';
 import Footer from './Footer'; // Assuming Footer.js is in the same directory
+import Boxing from './Boxing'
+import '../styles/App.css'
 
 
 
@@ -26,6 +28,7 @@ import Footer from './Footer'; // Assuming Footer.js is in the same directory
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/sports" element={<Sports />} />
+            <Route path="/boxing" element={<Boxing/>} />
             <Route path="/Tech" element={<Tech />} />
             <Route path="/music" element={<Music />} />
             <Route path="/contact" element={<Contact />} />

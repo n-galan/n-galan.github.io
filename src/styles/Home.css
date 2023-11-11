@@ -70,18 +70,26 @@
 }
 
 .offerHeading {
-    color: #000;
+    color: white;
     font-weight: bolder;
 }
 
 .missionStatement {
-    color: #000;
+    color: white;
     font-weight: bolder;
 }
 
 .home-page {
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.5), lightblue, #78c2ad);
-    min-height: 100vh; */
-    /* background: #6cc3d5; */
-    /* background: lightgray; */
+    background: linear-gradient(to bottom, black, black, #78C2AD, #78C2AD);
+    /* min-height: 100vh; 
+background: black; */
+
+}
+
+
+.centeredHeading {
+
+    color: white;
+
+
 }

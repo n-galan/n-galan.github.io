@@ -57,6 +57,13 @@
     background-color: #9178c2;  /* Color for the sports page */
 }
 
+.footer-music {
+    background-color: #F3969A;  /* Color for the sports page */
+}
+
+
+
+
 .footer-default {
     background-color: #78c2ad;  /* Default color for other pages */
 }
@@ -65,6 +72,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  
 }
 
 
