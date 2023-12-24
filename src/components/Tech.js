@@ -70,13 +70,21 @@ function Tech() {
       {/* Pair 3: Third tech-card and description-card for Grades 9 - 12 */}
       <div className="tech-description-pair">
         <div className="tech-card">
-          <h1>Master Coding!</h1>
-          <p>Advanced Concepts for Grades 9 - 12</p>
+          <h1>Engineering</h1>
+          <p>Spark Young Minds: Our Engineering Program for Tomorrow's Innovators!🔧🌟</p>
           <img src={PUcomputer} alt="Coding" />
         </div>
         <div className="description-card">
-          <p>High school students, it's time to build your future! Dive into advanced programming languages, tackle real-world projects, and prepare for a career in tech. Gain the competitive edge for college and beyond.</p>
-          <Link to="/coding-912" className="info-button">
+          <p>Get Ready to Engineer the Future with Us! 🌟🔧 <br></br>
+
+At Project Unbound, we're turning engineering into an exciting adventure for young minds. Our Engineering Program is not just about learning; it's about unleashing creativity and having a blast while doing it! <br></br>
+
+<br></br>When schools team up with us, they're opening the door to a world of hands-on fun, innovative thinking, and problem-solving wizardry. Our instructors are not just teachers; they're enthusiastic guides, here to inspire young innovators to dream big and think outside the box. <br></br>
+
+<br></br>Join us on this thrilling journey where students build cool stuff, make new friends, and develop the skills needed to shape the future. Our program is all about teamwork, boosting self-confidence, and nurturing a lifelong love for engineering. <br></br>
+
+<br></br>Choose Project Unbound for an engineering program that transforms learning into a joyful adventure. Let's engineer a future full of excitement and endless possibilities together! 🔧🚀🎉</p>
+          <Link to="/engineering" className="info-button">
             Press Here To Learn More About This Coding Program
           </Link>
         </div>

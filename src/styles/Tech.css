@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.info-button:hover {
+  background-color: #6cc3d5;
+}
+
 /* Media Queries for responsiveness */
 @media (min-width: 768px) {
     .tech-description-pair {
@@ -110,6 +114,13 @@
 .tech-card img {
     max-width: 50%;
     margin-bottom: 10px;
+    text-align: center;
+}
+.tech-card p {
+  text-align: center;
+}
+.description-card p {
+  text-align: center;
 }
 
 .info-button {

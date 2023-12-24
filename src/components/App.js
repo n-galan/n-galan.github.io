@@ -17,6 +17,7 @@ import Guitar from './SingleMusic/Guitar'
 import Piano from './SingleMusic/Piano'
 import CK from './SingleTech/Coding-K5'
 import C68 from './SingleTech/Coding-68'
+import STEM from './SingleTech/Engineering'
 import '../styles/App.css'
 
 
@@ -46,6 +47,7 @@ import '../styles/App.css'
             <Route path="/contact" element={<Contact />} />
             <Route path="/coding-K5" element={<CK />} />
             <Route path="/coding-68" element={<C68 />} />
+            <Route path="/engineering" element={<STEM />} />
 
 
             <Route path="*" element={<NotFound />} />

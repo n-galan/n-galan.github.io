@@ -1,0 +1,128 @@
+/* Coding68.css */
+.coding-page {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .coding-header {
+    background-color: #f7a03c; /* Dark blue color for the coding theme */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+  
+  .coding-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .coding-header p {
+    font-size: 1.2rem;
+  }
+  
+  .coding-program-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .coding-program-section {
+    background-color: white;
+    border-left: 5px solid #f7a03c; /* Blue color for the border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .coding-program-section h2 {
+    color: #f7a03c; /* Blue color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .coding-program-section p {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .coding-contact-info {
+    background-color: #f7a03c; /* Dark blue to match header */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .coding-contact-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .coding-contact-info p {
+    font-size: 1.2rem;
+  }
+  
+  /* Image styles */
+  .codingclass-image {
+    width: 410px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .coding-image {
+    width: 122px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; 
+    z-index: 3; 
+  }
+  .coding-image {
+    top: 180px; 
+    left: 80px; 
+  } 
+
+
+
+  .kidscoding-image {
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; /* Position absolute for custom placement */
+    z-index: 3; /* Set z-index to make sure the image is on top of cards */
+
+  }
+
+  .kidscoding-image {
+    top: 190px; /* Adjust the top position as needed */
+    right: 80px; /* Adjust the right position as needed */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .coding-program-details {
+      flex-direction: column;
+    }
+  
+    .coding-program-section {
+      flex-basis: 100%;
+    }
+  }
+  
