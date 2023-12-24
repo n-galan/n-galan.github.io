@@ -6,27 +6,39 @@ import '../styles/navbar.css';
 const Navbar = () => {
   const location = useLocation();
   let navbarClass = "navbar navbar-expand-lg ";
-  
-  switch(location.pathname) {
-      case '/':
-          navbarClass += "navbar-primary";  // Since you've defined .navbar-primary for home page
-          break;
-      case '/about':
-          // If you have a specific class for 'about', use it here, otherwise use the default
-          navbarClass += "navbar-default";
-          break;
-      case '/sports':
-          navbarClass += "navbar-sports";
-          break;
-      case '/Tech':
-            navbarClass += "navbar-tech";
-            break;
-        case '/music':
-              navbarClass += "navbar-music";
-              break;
-      //... add cases for other paths if needed
-      default:
-          navbarClass += "navbar-default";  // Your default navbar style
+
+  switch (location.pathname) {
+    case '/':
+      navbarClass += "navbar-primary";  // Since you've defined .navbar-primary for home page
+      break;
+    case '/about':
+      // If you have a specific class for 'about', use it here, otherwise use the default
+      navbarClass += "navbar-default";
+      break;
+    case '/sports':
+      navbarClass += "navbar-sports";
+      break;
+    case '/Tech':
+      navbarClass += "navbar-tech";
+      break;
+    case '/music':
+      navbarClass += "navbar-music";
+      break;
+    case '/boxing':
+      navbarClass += "navbar-boxing";
+      break;
+    case '/Soccer':
+      navbarClass += "navbar-soccer";
+      break;
+    case '/Chess':
+      navbarClass += "navbar-chess";
+      break;
+    case '/Basketball':
+      navbarClass += "navbar-basketball";
+      break;
+    //... add cases for other paths if needed
+    default:
+      navbarClass += "navbar-default";  // Your default navbar style
   }
 
   return (
@@ -39,7 +51,7 @@ const Navbar = () => {
           style={{ width: '200px', height: '150px' }}
         />
       </Link>
-      
+
       <button
         className="navbar-toggler"
         type="button"

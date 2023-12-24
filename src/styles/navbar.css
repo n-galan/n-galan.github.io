@@ -11,7 +11,7 @@
     display: block;
 }
 
-
+/* navbar single page colors  */
 .navbar-sports {
     background-color: #6cc3d5;  /* Replace with your desired color */
     font-weight: bolder;
@@ -20,6 +20,29 @@
 
   .navbar-music {
     background-color: #F3969A;  /* Replace with your desired color */
+    font-weight: bolder;
+    
+  }
+
+  .navbar-boxing {
+    background-color: #6cc3d5;  /* Replace with your desired color */
+    font-weight: bolder;
+    
+  }
+
+  .navbar-soccer {
+    background-color: #6cc3d5;  /* Replace with your desired color */
+    font-weight: bolder;
+  }
+
+  .navbar-chess {
+    background-color: #6cc3d5;  /* Replace with your desired color */
+    font-weight: bolder;
+    
+  }
+
+  .navbar-basketball {
+    background-color: #6cc3d5;  /* Replace with your desired color */
     font-weight: bolder;
     
   }

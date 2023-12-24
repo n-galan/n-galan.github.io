@@ -1,0 +1,129 @@
+/* Basketball.css */
+.basketball-page {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .basketball-header {
+    background-color: #f7a03c; /* Gold color to match basketball theme */
+    color: #000; /* Black for contrast */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .basketball-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .basketball-header p {
+    font-size: 1.2rem;
+  }
+  
+  .basketball-program-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .basketball-program-section {
+    background-color: #fff; /* White background for content sections */
+    border-left: 5px solid #f7a03c; /* Gold border to match theme */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .basketball-program-section h2 {
+    color: #FF8C00; /* Dark orange for headings */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .basketball-program-section p {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .basketball-contact-info {
+    background-color: #f7a03c; /* Gold to match header */
+    color: #000; /* Black for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .basketball-contact-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .basketball-contact-info p {
+    font-size: 1.2rem;
+  }
+  
+  /* Image styles */
+
+  /* This makes it in the center on the navbar  */
+  .basketball-image {
+    width: 210px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+   .kidbasketball-image {
+    width: 122px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; 
+    z-index: 3; 
+  }
+  .kidbasketball-image {
+    top: 185px; 
+    left: 30px; 
+  } 
+
+  .basketballnet-image {
+    width: 120px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; /* Position absolute for custom placement */
+    z-index: 3; /* Set z-index to make sure the image is on top of cards */
+
+  }
+
+  .basketballnet-image {
+    top: 200px; /* Adjust the top position as needed */
+    right: 40px; /* Adjust the right position as needed */
+  }
+  
+
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .basketball-program-details {
+      flex-direction: column;
+    }
+  
+    .basketball-program-section {
+      flex-basis: 100%;
+    }
+  }
+  

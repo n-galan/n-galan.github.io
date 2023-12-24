@@ -48,7 +48,7 @@
     color: #3498db;
 }
 
-
+/* Footer single page colors  */
 .footer-sports {
     background-color: #6cc3d5;  /* Color for the sports page */
 }
@@ -60,6 +60,22 @@
 .footer-music {
     background-color: #F3969A;  /* Color for the sports page */
 }
+
+.footer-boxing {
+    background-color: #6cc3d5;  /* Color for the sports page */
+}
+
+.footer-soccer {
+    background-color: #6cc3d5;  /* Color for the sports page */
+}
+.footer-basketball {
+    background-color: #6cc3d5;  /* Color for the sports page */
+}
+
+.footer-chess {
+    background-color: #6cc3d5;  /* Color for the sports page */
+}
+
 
 
 

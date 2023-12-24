@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Music.css';
 import music from '../img/Musix PU.png';
+import { Link } from 'react-router-dom';
 // import GuitarImage from '../img/Guitar.png';
 
 const Music = () => {
@@ -32,9 +33,9 @@ Join the movement of mindful musicianship. Let’s tune into tranquility and com
           <p>Play, Learn, Thrive: Piano for Youth
 
 Elevate your school's curriculum with our piano program! Tailored for young minds, our lessons do more than teach music—they build confidence, enhance academic skills, and offer a creative outlet for stress. Give your students the key to success and well-being. Let's make music together!</p>
-          <button className="music-info-button">
+          <Link to="/Piano" className="music-info-button">
             Click Here To Learn More About Our Piano (Keyboard) Program 
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -48,9 +49,9 @@ Elevate your school's curriculum with our piano program! Tailored for young mind
         <div className="music-description-card">
           {/* Description for Guitar */}
           <p>Join our guitar program and master the chords...</p>
-          <button className="music-info-button">
+          <Link to="/Guitar" className="music-info-button">
             Click Here To Learn More About Our Guitar Program
-          </button>
+          </Link>
         </div>
       </div>
     </div>

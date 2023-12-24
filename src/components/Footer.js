@@ -13,7 +13,18 @@ const Footer = () => {
             return 'footer-tech';
         } else if (location.pathname === '/music') {
             return 'footer-music';
-        }else {
+        } else if (location.pathname === '/boxing') {
+            return 'footer-boxing'
+        } else if (location.pathname === '/Soccer') {
+            return 'footer-soccer'
+        }
+        else if (location.pathname === '/Basketball') {
+            return 'footer-basketball'
+        }
+        else if (location.pathname === '/Chess') {
+            return 'footer-chess'
+        }
+        else {
             return 'footer-default';
         }
     }

@@ -48,7 +48,7 @@
   
   /* Styling for the information button in music cards */
   .music-info-button {
-    background-color: #9178c2; /* Purple shade for the button */
+    background-color: #F3969A; /* Purple shade for the button */
     border: none;
     color: white;
     padding: 10px 15px;
@@ -69,7 +69,10 @@
   animation: glow-animation 2s infinite alternate;
 }
 
+.music-info-button:hover {
+  background-color: #806db9; /* Purple shade for the button */
 
+}
 /* Animation keyframes for glow effect */
 @keyframes glow-animation {
   from {
