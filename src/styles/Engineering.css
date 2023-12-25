@@ -1,0 +1,128 @@
+/* Engineering.css */
+.engineering-page {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .engineering-header {
+    background-color: #f7a03c; /* Navy blue color for the engineering theme */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .engineering-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .engineering-header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .engineering-program-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .engineering-program-section {
+    background-color: white;
+    border-left: 5px solid #f7a03c; /* Orange color for the border */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .engineering-program-section h2 {
+    color: #d35400; /* Pumpkin color for headings */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .engineering-program-section p {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  .engineering-contact-info {
+    background-color: #f7a03c; /* Navy blue to match header */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .engineering-contact-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .engineering-contact-info p {
+    font-size: 1.2rem;
+  }
+  
+  /* Image styles */
+.kide-image {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+  .engineering-image {
+    width: 240px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; 
+    z-index: 3; 
+  }
+  
+
+  .engineering-image {
+    top: 185px; 
+    left: 30px; 
+  } 
+
+.techboy-image {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: absolute; /* Position absolute for custom placement */
+    z-index: 3; /* Set z-index to make sure the image is on top of cards */
+}
+
+.techboy-image {
+    top: 160px; /* Adjust the top position as needed */
+    right: 60px; /* Adjust the right position as needed */
+}
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .engineering-program-details {
+      flex-direction: column;
+    }
+  
+    .engineering-program-section {
+      flex-basis: 100%;
+    }
+  }
+  

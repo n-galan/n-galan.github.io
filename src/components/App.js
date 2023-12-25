@@ -9,6 +9,18 @@ import Tech from './Tech';
 import Music from './Music';
 import Contact from './Contact';
 import Footer from './Footer'; // Assuming Footer.js is in the same directory
+import Boxing from './SingleSports/Boxing'
+import Soccer from './SingleSports/Soccer';
+import Basketall from './SingleSports/Basketball'
+import Chess from './SingleSports/Chess';
+import Guitar from './SingleMusic/Guitar'
+import Piano from './SingleMusic/Piano'
+import CK from './SingleTech/Coding-K5'
+import C68 from './SingleTech/Coding-68'
+import STEM from './SingleTech/Engineering'
+import Resources from './Resources'
+
+import '../styles/App.css'
 
 
 
@@ -26,9 +38,22 @@ import Footer from './Footer'; // Assuming Footer.js is in the same directory
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/sports" element={<Sports />} />
-            <Route path="/Tech" element={<Tech />} />
+            <Route path="/boxing" element={<Boxing/>} />
+            <Route path="/Soccer" element={<Soccer />} /> {/* Soccer Route */}
+            <Route path="/Basketball" element={<Basketall />} /> {/* Basketball Route */}
+            <Route path="/Chess" element={<Chess />} /> {/* Chess Route */}
+            <Route path="/tech" element={<Tech />} />
             <Route path="/music" element={<Music />} />
+            <Route path="/Guitar" element={<Guitar />} />
+            <Route path="/Piano" element={<Piano />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/coding-K5" element={<CK />} />
+            <Route path="/coding-68" element={<C68 />} />
+            <Route path="/engineering" element={<STEM />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/contact" element={<Contact />} />
+
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
@@ -37,6 +62,7 @@ import Footer from './Footer'; // Assuming Footer.js is in the same directory
     </Router>
   );
 }
+
 
 
 

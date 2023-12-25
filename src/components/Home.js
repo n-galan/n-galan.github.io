@@ -27,16 +27,14 @@ const Home = () => {
         { src: Symbol, alt: 'Description 1' },
         { src: Image4, alt: 'Description 4' }
     ];
-
+    
     const cardData = [
-        { mainTitle: "Boxing", subTitle: "Empower & Transform!", description: <img src={PUBoxingImage} alt="Boxing" style={{maxWidth: '100%', maxHeight: '100%'}} /> },
-        { mainTitle: "BasketBall", subTitle: "Unlock your court dominance ", description: <img src={BBPU} alt="Boxing" style={{maxWidth: '110%', maxHeight: '100%'}} />},
-        { mainTitle: "Soccer", subTitle: " Mastering Soccer One Kick at a Time!", description: <img src={Soccer} alt="Boxing" style={{maxWidth: '100%', maxHeight: '100%'}} />},
-        { mainTitle: "Chess", subTitle: "Strategize and outthink your opponent.", description: <img src={PUChess} alt="Boxing" style={{maxWidth: '75%', maxHeight: '90%'}} />  },
-        { mainTitle: "Coding", subTitle: "Craft Solutions, Typing One Line at a Time!",description: <img src={Computer} alt="Boxing" style={{maxWidth: '80%', maxHeight: '100%'}} />},
-        { mainTitle: "Music", subTitle: "Piano Passion: Every Key Tells a Story. Start Yours Today!", description: <img src={MusicPU} alt="Boxing" style={{maxWidth: '80%', maxHeight: '100%'}} />}
-
-
+        { mainTitle: "Boxing", subTitle: "Empower & Transform!", description: <img src={PUBoxingImage} alt="Boxing" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/boxing' },
+        { mainTitle: "BasketBall", subTitle: "Unlock your court dominance", description: <img src={BBPU} alt="BasketBall" style={{maxWidth: '110%', maxHeight: '100%'}} />, navigateTo: '/basketball' },
+        { mainTitle: "Soccer", subTitle: "Mastering Soccer One Kick at a Time!", description: <img src={Soccer} alt="Soccer" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/soccer' },
+        { mainTitle: "Chess", subTitle: "Strategize and outthink your opponent.", description: <img src={PUChess} alt="Chess" style={{maxWidth: '75%', maxHeight: '90%'}} />, navigateTo: '/chess'  },
+        { mainTitle: "STEM", subTitle: "Craft Solutions, Typing One Line at a Time!",description: <img src={Computer} alt="Coding" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/coding' },
+        { mainTitle: "ARTS", subTitle: "Dive into the world of arts, where music and creativity come alive!🎨🎶", description: <img src={MusicPU} alt="Music" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/music' }
     ];
     
     
@@ -62,13 +60,19 @@ const Home = () => {
             </div>
             <p className="programDescription">{programDescription}</p>
             <div className="card-container" ref={cardsRef} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {cardData.map((card, index) => (
-    <InfoCard key={index} mainTitle={card.mainTitle} subTitle={card.subTitle} description={card.description} />
-))}
-
+                {cardData.map((card, index) => (
+                    <InfoCard 
+                        key={index} 
+                        mainTitle={card.mainTitle} 
+                        subTitle={card.subTitle} 
+                        description={card.description}
+                        navigateTo={card.navigateTo} // Pass the navigateTo prop to InfoCard
+                    />
+                ))}
             </div>
         </div>
     );
 };
+
 
 export default Home;

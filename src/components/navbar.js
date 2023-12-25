@@ -6,24 +6,42 @@ import '../styles/navbar.css';
 const Navbar = () => {
   const location = useLocation();
   let navbarClass = "navbar navbar-expand-lg ";
-  
-  switch(location.pathname) {
-      case '/':
-          navbarClass += "navbar-primary";  // Since you've defined .navbar-primary for home page
-          break;
-      case '/about':
-          // If you have a specific class for 'about', use it here, otherwise use the default
-          navbarClass += "navbar-default";
-          break;
-      case '/sports':
-          navbarClass += "navbar-sports";
-          break;
-          case '/Tech':
-            navbarClass += "navbar-tech";
-            break;
-      //... add cases for other paths if needed
-      default:
-          navbarClass += "navbar-default";  // Your default navbar style
+
+  switch (location.pathname) {
+    case '/':
+      navbarClass += "navbar-primary";  // Since you've defined .navbar-primary for home page
+      break;
+    case '/about':
+      // If you have a specific class for 'about', use it here, otherwise use the default
+      navbarClass += "navbar-default";
+      break;
+    case '/sports':
+      navbarClass += "navbar-sports";
+      break;
+    case '/Tech':
+      navbarClass += "navbar-tech";
+      break;
+    case '/music':
+      navbarClass += "navbar-music";
+      break;
+    case '/boxing':
+      navbarClass += "navbar-boxing";
+      break;
+    case '/Soccer':
+      navbarClass += "navbar-soccer";
+      break;
+    case '/Chess':
+      navbarClass += "navbar-chess";
+      break;
+    case '/Basketball':
+      navbarClass += "navbar-basketball";
+      break;
+      case '/resources':
+        navbarClass += "navbar-resources";
+        break;
+    //... add cases for other paths if needed
+    default:
+      navbarClass += "navbar-default";  // Your default navbar style
   }
 
   return (
@@ -36,7 +54,7 @@ const Navbar = () => {
           style={{ width: '200px', height: '150px' }}
         />
       </Link>
-      
+
       <button
         className="navbar-toggler"
         type="button"
@@ -55,16 +73,16 @@ const Navbar = () => {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">About PU</Link>
+            <Link to="/resources" className="nav-link">Unbound Resources</Link>
           </li>
           <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              PU Programs
+              Unbound Programs
             </span>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link to="/sports" className="dropdown-item">Sports Unbound</Link>
-              <Link to="/tech" className="dropdown-item">Tech Unbound</Link>
-              <Link to="/music" className="dropdown-item">Music Unbound</Link>
+              <Link to="/sports" className="dropdown-item">Unbound Sports</Link>
+              <Link to="/tech" className="dropdown-item">Unbound Tech</Link>
+              <Link to="/music" className="dropdown-item">Unbound Music</Link>
             </div>
           </li>
           <li className="nav-item">
