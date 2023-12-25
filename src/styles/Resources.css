@@ -1,0 +1,195 @@
+/* CommunitySupport.css - Full CSS Code */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a general font for the whole container */
+  .community-support-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    background: black; /* Default background for the container */
+    color: white; /* Default text color for the container */
+  }
+  .community-support-container p {
+    color: white; 
+  }
+
+  .community-support-container h2, h4, h3{
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Header Section */
+  .community-header {
+    background: linear-gradient(135deg, #6cc3d5, #9178c2);
+    color: black; /* Text color for the header */
+    text-align: center;
+    padding: 40px 20px;
+    font-weight: bold;
+  }
+  
+  .community-header h1 {
+    font-weight: bold;
+    color:black;
+  }
+  .community-header p {
+    color: black;
+  }
+  
+  /* Resources Section */
+  .resources-section {
+    padding: 20px;
+  }
+  
+  .resource-card {
+    background-color: #fff;
+    color: #333; /* Text color for content inside cards */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Link Styling */
+  .resource-card a {
+    color: #0077B6; /* Link color within resource cards */
+    text-decoration: underline;
+  }
+  
+  .resource-card a:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Accordion Section */
+  .accordion-section {
+    padding: 20px;
+  }
+  
+  /* Each accordion panel styling */
+  .accordion {
+    background-color: #f9f9f9;
+    color: white; /* Text color for accordions */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  /* FAQ Question */
+  .accordion h3 {
+    font-weight: 600;
+  }
+  
+  /* FAQ Answer */
+  .panel {
+    padding-left: 15px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* Tabs Section */
+  .resource-tabs {
+    padding: 20px;
+  }
+  
+  .tabs {
+    list-style-type: none;
+  }
+  
+  .tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333; /* Text color for tabs content */
+  }
+  
+  /* Highlights Section */
+  .resource-highlights {
+    padding: 20px;
+  }
+  
+  .highlight-card {
+    background-color: #fff;
+    color: #333; /* Text color for highlight cards */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Call to Action Section */
+  .call-to-action {
+    background: linear-gradient(135deg, #f7a03c, #f7523c);
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+  }
+
+ /* ... existing styles ... */
+
+.unemployment-insurance-section h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .unemployment-insurance-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    color: white; /* Set the text color to white for list items */
+  }
+  
+  .unemployment-insurance-section p {
+    color: white; /* Set paragraphs text color to white */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ensure links are visible against the background */
+  .unemployment-insurance-section a {
+    color: #1e90ff; /* Color for links */
+    text-decoration: underline; /* Underlining links for better readability */
+  }
+  
+  .unemployment-insurance-section a:hover {
+    color: #f7a03c; /* Color for links on hover */
+    text-decoration: none; /* Removing underline on hover */
+  }
+  
+  /* ... additional styles ... */
+  
+  
+  
+  /* Footer Section */
+  .community-footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resource-card, .accordion, .tab-content, .highlight-card {
+      margin: 10px;
+    }
+    
+    .call-to-action {
+      margin: 20px 0;
+    }
+  }
+  
+  /* Additional styles for buttons, links, and other elements */
+  

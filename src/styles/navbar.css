@@ -46,6 +46,12 @@
     font-weight: bolder;
     
   }
+
+  .navbar-resources {
+    background-color: #78c2ad;  /* Replace with your desired color */
+    font-weight: bolder;
+    
+  }
   
   .navbar-default {
     background-color: #78c2ad;  /* Replace with your default color */

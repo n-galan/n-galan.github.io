@@ -30,7 +30,7 @@ function Tech() {
         </p>
       </div>
       {/* Pair 1: First tech-card and description-card for Grades K - 5 */}
-      <div className="tech-description-pair">
+      {/* <div className="tech-description-pair">
         <div className="tech-card">
           <h1>Discover Coding!</h1>
           <p>Fun & Games with Code for Grades K - 5</p>
@@ -41,7 +41,7 @@ function Tech() {
           <Link to="/coding-k5" className="info-button">
             Press Here To Learn More About This Coding Program
           </Link>        </div>
-      </div>
+      </div> */}
 
 
       {/* Pair 2: Second tech-card and description-card for Grades 6 - 8 */}

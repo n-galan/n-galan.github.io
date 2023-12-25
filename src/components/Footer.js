@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/Footer.css';
+import ig from '../img/instagram.png'
 
 const Footer = () => {
     const location = useLocation();
@@ -24,6 +25,12 @@ const Footer = () => {
         else if (location.pathname === '/Chess') {
             return 'footer-chess'
         }
+        else if (location.pathname === '/coding-68') {
+            return 'footer-coding68'
+        }
+        else if (location.pathname === '/engineering') {
+            return 'footer-engineering'
+        }
         else {
             return 'footer-default';
         }
@@ -39,18 +46,18 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li><i className="fas fa-envelope"></i> contact@projectunbound.com</li>
-                        <li><i className="fas fa-phone"></i> +1 (123) 456-7890</li>
-                        <li><i className="fas fa-map-marker-alt"></i> 123 Main St, New York, NY</li>
+                        <li><i className="fas fa-envelope"></i> info@projectunbound.org</li>
+                        {/* <li><i className="fas fa-phone"></i> +1 (123) 456-7890</li>
+                        <li><i className="fas fa-map-marker-alt"></i> 123 Main St, New York, NY</li> */}
                     </ul>
                 </div>
                 <div className="footer-section">
                     <h4>Follow Us</h4>
                     <ul className="social-list">
-                        <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                    <a href="https://www.instagram.com/Project_Unbound" target="_blank" rel="noopener noreferrer">
+                                <img src={ig} alt="Instagram" className="instagram-icon" />
+                                <span className="instagram-name">Project_unbound</span>
+                            </a>
                     </ul>
                 </div>
             </div>

@@ -36,6 +36,9 @@ const Navbar = () => {
     case '/Basketball':
       navbarClass += "navbar-basketball";
       break;
+      case '/resources':
+        navbarClass += "navbar-resources";
+        break;
     //... add cases for other paths if needed
     default:
       navbarClass += "navbar-default";  // Your default navbar style
@@ -70,16 +73,16 @@ const Navbar = () => {
             <Link to="/" className="nav-link">Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">About PU</Link>
+            <Link to="/resources" className="nav-link">Unbound Resources</Link>
           </li>
           <li className="nav-item dropdown">
             <span className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Unbound Programs
             </span>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link to="/sports" className="dropdown-item">Sports Unbound</Link>
-              <Link to="/tech" className="dropdown-item">Tech Unbound</Link>
-              <Link to="/music" className="dropdown-item">Music Unbound</Link>
+              <Link to="/sports" className="dropdown-item">Unbound Sports</Link>
+              <Link to="/tech" className="dropdown-item">Unbound Tech</Link>
+              <Link to="/music" className="dropdown-item">Unbound Music</Link>
             </div>
           </li>
           <li className="nav-item">

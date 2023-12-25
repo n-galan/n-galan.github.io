@@ -1,15 +1,16 @@
 // Boxing.js
 import React from 'react';
-import '../../styles/Guitar.css'; // Path to your Boxing CSS file
+import '../../styles/Paino.css'; // Path to your Boxing CSS file
+import ComingSoon from '../../img/ComingSoon.png'
 
-const Boxing = () => {
+const Piano = () => {
   return (
-    <div className="boxing-container">
-      <h1>Welcome to Our Guitar Program</h1>
-      <p>Step into the ring of confidence and discipline with our boxing classes. Designed for all skill levels, our program emphasizes fitness, self-defense, and mental toughness. Get ready to punch above your weight and become a champion in life!</p>
-      {/* Add more content and styling as needed */}
+    <div className="Guitar-container">
+      <div className="coming-soon-overlay">
+        <img src={ComingSoon} alt="Coming Soon" className="coming-soon-image" />
+      </div>
     </div>
   );
 };
 
-export default Boxing;
+export default Piano;

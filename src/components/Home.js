@@ -34,7 +34,7 @@ const Home = () => {
         { mainTitle: "Soccer", subTitle: "Mastering Soccer One Kick at a Time!", description: <img src={Soccer} alt="Soccer" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/soccer' },
         { mainTitle: "Chess", subTitle: "Strategize and outthink your opponent.", description: <img src={PUChess} alt="Chess" style={{maxWidth: '75%', maxHeight: '90%'}} />, navigateTo: '/chess'  },
         { mainTitle: "STEM", subTitle: "Craft Solutions, Typing One Line at a Time!",description: <img src={Computer} alt="Coding" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/coding' },
-        { mainTitle: "ARTS", subTitle: "Piano Passion: Every Key Tells a Story. Start Yours Today!", description: <img src={MusicPU} alt="Music" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/music' }
+        { mainTitle: "ARTS", subTitle: "Dive into the world of arts, where music and creativity come alive!🎨🎶", description: <img src={MusicPU} alt="Music" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/music' }
     ];
     
     

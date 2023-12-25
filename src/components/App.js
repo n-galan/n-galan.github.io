@@ -18,6 +18,8 @@ import Piano from './SingleMusic/Piano'
 import CK from './SingleTech/Coding-K5'
 import C68 from './SingleTech/Coding-68'
 import STEM from './SingleTech/Engineering'
+import Resources from './Resources'
+
 import '../styles/App.css'
 
 
@@ -44,10 +46,12 @@ import '../styles/App.css'
             <Route path="/music" element={<Music />} />
             <Route path="/Guitar" element={<Guitar />} />
             <Route path="/Piano" element={<Piano />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
             <Route path="/coding-K5" element={<CK />} />
             <Route path="/coding-68" element={<C68 />} />
             <Route path="/engineering" element={<STEM />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/contact" element={<Contact />} />
 
 
             <Route path="*" element={<NotFound />} />
