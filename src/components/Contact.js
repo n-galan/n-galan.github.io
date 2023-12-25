@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/ContactUs.css'; // Make sure the CSS path is correct
-import emailIcon from '../img/email-icon.png'; // Path to your email icon image
-import instagramIcon from '../img/instagram.png'; // Path to your Instagram icon image
+import emailIcon from '../assets/img/email-icon.png'; // Path to your email icon image
+import instagramIcon from '../assets/img/instagram.png'; // Path to your Instagram icon image
 
 const ContactUs = () => {
   return (

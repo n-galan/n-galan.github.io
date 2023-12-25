@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../img/PB One no back.png';
+import Logo from '../assets/img/PB One no back.png';
 import '../styles/navbar.css';
 
 const Navbar = () => {

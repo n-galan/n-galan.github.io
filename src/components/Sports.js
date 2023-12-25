@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Sports.css';
-import SoccerImage from '../img/Soccer.png';
-import BoxingImage from '../img/PU Boxing.png';
-import BasketballImage from '../img/BB PU.png';
-import Chess from '../img/Chess PU.png';
+import SoccerImage from '../assets/img/Soccer.png';
+import BoxingImage from '../assets/img/PU Boxing.png';
+import BasketballImage from '../assets/img/BB PU.png';
+import Chess from '../assets/img/Chess PU.png';
 
 const PUSports = () => {
   return (

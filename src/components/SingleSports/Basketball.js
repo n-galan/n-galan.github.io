@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Basketball.css'; // Ensure the path to your CSS file is correct
-import BasketballImage from '../../img/basketballplayer.png'; // Replace with the path to your basketball player image
-import kidbasketball from '../../img/kidbasketball.png';
-import basketballnet from '../../img/basketball-net.png';
+import BasketballImage from '../../assets/img/basketballplayer.png'; // Replace with the path to your basketball player image
+import kidbasketball from '../../assets/img/kidbasketball.png';
+import basketballnet from '../../assets/img/basketball-net.png';
 
 const Basketball = () => {
   return (

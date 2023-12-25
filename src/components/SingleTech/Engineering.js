@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Engineering.css'; // Ensure the path to your CSS file is correct
-import STEM from '../../img/STEM.png'; // Replace with the path to your engineering image
-import kide from '../../img/kide.png'; 
-import techboy from '../../img/Techboy.png'
+import STEM from '../../assets/img/STEM.png'; // Replace with the path to your engineering image
+import kide from '../../assets/img/kide.png'; 
+import techboy from '../../assets/img/Techboy.png'
 
 const Engineering = () => {
   return (

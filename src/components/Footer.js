@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/Footer.css';
-import ig from '../img/instagram.png'
+import ig from '../assets/img/instagram.png'
 
 const Footer = () => {
     const location = useLocation();
