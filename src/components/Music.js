@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Music.css';
-import music from '../img/Musix PU.png';
+import music from '../assets/img/Musix PU.png';
 import { Link } from 'react-router-dom';
-import ComingSoon from '../img/ComingSoon.png'; // Ensure this is the correct path to your image
+import ComingSoon from '../assets/img/ComingSoon.png'; // Ensure this is the correct path to your image
 
 const Music = () => {
   return (

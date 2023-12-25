@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Coding-68.css'; // Make sure the path to your CSS file is correct
-import Codingclass from '../../img/Codingclass.png'; 
-import kidscoding from '../../img/Kidscoding.png';
-import coding from '../../img/Coding.png';// Replace with the path to your coding image
+import Codingclass from '../../assets/img/Codingclass.png'; 
+import kidscoding from '../../assets/img/Kidscoding.png';
+import coding from '../../assets/img/Coding.png';// Replace with the path to your coding image
 
 const Coding68 = () => {
   return (

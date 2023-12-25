@@ -1,7 +1,7 @@
 // Boxing.js
 import React from 'react';
 import '../../styles/Paino.css'; // Path to your Boxing CSS file
-import ComingSoon from '../../img/ComingSoon.png'
+import ComingSoon from '../../assets/img/ComingSoon.png'
 
 const Piano = () => {
   return (

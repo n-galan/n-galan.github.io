@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../styles/Chess.css'; // Ensure the path to your CSS file is correct
-import ChessImage from '../../img/chessplayer.png'; // Replace with the path to your chess player image
-import chesshand2 from '../../img/chesshand2.png'; 
-import chessdrawing from '../../img/chesssketch.png'; 
-import kidchess from '../../img/kidchess.png'
+import ChessImage from '../../assets/img/chessplayer.png'; // Replace with the path to your chess player image
+import chesshand2 from '../../assets/img/chesshand2.png'; 
+import chessdrawing from '../../assets/img/chesssketch.png'; 
+import kidchess from '../../assets/img/kidchess.png'
 
 const Chess = () => {
   return (

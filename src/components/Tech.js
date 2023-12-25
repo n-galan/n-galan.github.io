@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Tech.css';
-import PUcomputer from '../img/PU Computer.png';
-import PU6 from '../img/HPC.png'
-import High from '../img/Computerpu.png'
+import PUcomputer from '../assets/img/PU Computer.png';
+import PU6 from '../assets/img/HPC.png'
+import High from '../assets/img/Computerpu.png'
 import { Link } from 'react-router-dom';
 
 

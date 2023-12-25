@@ -1,18 +1,18 @@
 import React, { useRef } from 'react';
 import Carousel from './Carousel';
-import Symbol from '../img/PU.png';
-import Image4 from '../img/hands.jpg';
+import Symbol from '../assets/img/PU.png';
+import Image4 from '../assets/img/hands.jpg';
 import '../styles/Home.css';
 // import '../styles/InfoCards.css';
 import InfoCard from './InfoCard';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import PUBoxingImage from '../img/PU Boxing.png';
-import PUChess from '../img/Chess PU.png';
-import BBPU from '../img/BB PU.png';
-import MusicPU from '../img/Musix PU.png';
-import Computer from '../img/PU Computer.png';
-import Soccer from '../img/Soccer.png';
+import PUBoxingImage from '../assets/img/PU Boxing.png';
+import PUChess from '../assets/img/Chess PU.png';
+import BBPU from '../assets/img/BB PU.png';
+import MusicPU from '../assets/img/Musix PU.png';
+import Computer from '../assets/img/PU Computer.png';
+import Soccer from '../assets/img/Soccer.png';
 
 
 

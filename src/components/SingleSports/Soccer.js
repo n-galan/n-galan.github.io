@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/Soccer.css'; // Make sure the path to your CSS file is correct
-import PlayerImage from '../../img/kidsoccer.png'; // Replace with the path to your soccer player image
-import PlayerImage2 from '../../img/kid2soccer.png'
-import groupsoccer from '../../img/groupsoccer.png'
+import PlayerImage from '../../assets/img/kidsoccer.png'; // Replace with the path to your soccer player image
+import PlayerImage2 from '../../assets/img/kid2soccer.png'
+import groupsoccer from '../../assets/img/groupsoccer.png'
 
 const Soccer = () => {
   return (
