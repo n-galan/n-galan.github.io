@@ -6,7 +6,6 @@ import App from './components/App';
 
 
 import 'bootswatch/dist/minty/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 

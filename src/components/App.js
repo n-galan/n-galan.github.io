@@ -26,7 +26,7 @@ import '../styles/App.css'
 
 // Your variable overrides go here, e.g.:
 // $h1-font-size: 3rem;
- import "bootswatch/dist/minty/bootstrap.min.css";
+//  import "bootswatch/dist/minty/bootstrap.min.css";
 
  function App() {
   return (
