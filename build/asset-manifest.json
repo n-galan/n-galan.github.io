@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06d8254f.css",
-    "main.js": "/static/js/main.9b41da7e.js",
+    "main.css": "/static/css/main.3328be64.css",
+    "main.js": "/static/js/main.a64ed979.js",
     "static/media/KidBoxing.png": "/static/media/KidBoxing.d72c206f4d78d3560737.png",
     "static/media/kid2soccer.png": "/static/media/kid2soccer.834517723e5e6c6a169b.png",
     "static/media/STEM.png": "/static/media/STEM.e8f37395b2ddc117d7b7.png",
@@ -36,12 +36,10 @@
     "static/media/chesssketch.png": "/static/media/chesssketch.f72d563114a0656ccbdf.png",
     "static/media/kidchess.png": "/static/media/kidchess.b5730a6a10ca7c229cb0.png",
     "static/media/email-icon.png": "/static/media/email-icon.bbe8c4d2a4b207b2e10a.png",
-    "index.html": "/index.html",
-    "main.06d8254f.css.map": "/static/css/main.06d8254f.css.map",
-    "main.9b41da7e.js.map": "/static/js/main.9b41da7e.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.06d8254f.css",
-    "static/js/main.9b41da7e.js"
+    "static/css/main.3328be64.css",
+    "static/js/main.a64ed979.js"
   ]
 }
