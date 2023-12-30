@@ -1,3 +1,15 @@
+/* Base styles */
+.centeredHeading,
+.offerHeading,
+.programDescription,
+.arrowContainer,
+.programsHeading,
+.missionStatement {
+    text-align: center;
+    transition: color 0.3s ease;
+    padding: 0px 40px;
+}
+
 .centeredHeading {
     text-align: center;
 }
@@ -14,6 +26,66 @@
 .offerHeading:hover {
     color: #44D9E8;  /* Adjust this color if needed */
 }
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .offerHeading {
+        font-size: 16px; /* Smaller font size for mobile screens */
+        margin-top: 10px; /* Reduced margin */
+        margin-bottom: 5px;
+    }
+    .missionStatement,
+    .programDescription {
+        padding: 0 10px; /* Padding to prevent text from touching the edges */
+        font-size: 14px; /* Smaller font size for readability on mobile */
+    }
+    /* Adjust other elements as needed for mobile layout */
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .offerHeading {
+        font-size: 20px; /* Adjusted font size for tablets */
+    }
+    .missionStatement,
+    .programDescription {
+        padding: 0 20px; /* Increased padding for tablets */
+        font-size: 16px; /* Adjusted font size for tablets */
+    }
+    /* ... other tablet styles ... */
+}
+
+
+@media only screen and (max-width: 320px) {
+       .offerHeading {
+        font-size: 20px; /* Smaller font size for small screens */
+        margin-top: 15px; /* Reduced margin */
+        margin-bottom: 10px;
+        /* ... other styles */
+    }
+}
+
+
+/* Desktop styles */
+@media only screen and (min-width: 1025px) {
+    .offerHeading {
+        font-size: 24px; /* Larger font size for desktops */
+    }
+    .missionStatement,
+    .programDescription {
+        padding: 0 30px; /* Increased padding for desktops */
+        font-size: 18px; /* Larger font size for desktops */
+    }
+    /* ... additional desktop styles ... */
+}
+
+/* Larger desktops */
+@media only screen and (min-width: 1440px) {
+    /* ... additional large desktop styles ... */
+}
+
 
 .arrow-down {
     display: inline-block;
@@ -91,5 +163,11 @@ background: black; */
 
     color: white;
 
+
+}
+
+.missionStatement p {
+
+    /* padding: 40px;  */
 
 }

@@ -2,6 +2,12 @@ import React, { useRef } from 'react';
 import Carousel from './Carousel';
 import Symbol from '../assets/img/PU.png';
 import Image4 from '../assets/img/hands.jpg';
+import kidboxing from '../assets/img/KidBoxing.png'
+import KidFootball from '../assets/img/KidFootball.png'
+import PlayingSoccer from '../assets/img/PlayingSoccer.png'
+import KidsSoccer from '../assets/img/KidsSoccer.png'
+import girlbasketball from '../assets/img/girlbasketball.png'
+
 import '../styles/Home.css';
 // import '../styles/InfoCards.css';
 import InfoCard from './InfoCard';
@@ -25,7 +31,12 @@ const Home = () => {
 
     const imageList = [
         { src: Symbol, alt: 'Description 1' },
-        { src: Image4, alt: 'Description 4' }
+        { src: Image4, alt: 'Description 2' },
+        { src: kidboxing, alt: 'Description 3'},
+        { src: KidFootball, alt: 'Description 4'},
+        { src: KidsSoccer, alt: 'Description 5'},
+        { src: PlayingSoccer, alt: 'Description 5'},
+        { src: girlbasketball, alt: 'Description 5'}
     ];
     
     const cardData = [

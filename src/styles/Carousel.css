@@ -1,26 +1,114 @@
-.carousel-inner {
-    width: 600px;   /* fixed width */
-    height: 400px;  /* fixed height */
-    margin: 0 auto; /* centers the carousel container horizontally */
-    text-align: center;
-}
-
-.carousel-item {
-    display: none; /* By default, items are hidden */
+.carousel-container {
+    perspective: 1000px;
+  }
+  
+  .slick-slide {
+    transform-style: preserve-3d;
+  }
+  
+  .slick-center .carousel-image {
+    transform: scale(1.0);
+    transition: transform .3s ease;
+  }
+  
+  .slick-slide:not(.slick-center) .carousel-image {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    opacity: 0.75;
+    z-index: 1;
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    opacity: 1;
+    color: #ccc;
+  }
+  
+  .slick-prev {
+    left: 25px;
+  }
+  
+  .slick-next {
+    right: 25px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .carousel-item {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.carousel-item.active {
-    display: flex; /* Only the active item is displayed */
-}
-
-.carouselImage {
-    width: 200px;          /* fixed width */
-    height: 300px;         /* fixed height */
-    object-fit: cover;     /* this ensures the image covers the dimensions without distortion */
-    display: block;        /* removes any default spacing around the image */
-    margin: 0 auto;        /* centers the image horizontally */
-    object-position: center; /* keeps the center of the image in view */
-}
+    height: 400px;
+  }
+  
+  .carousel-image {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    margin: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 600px) {
+    .slick-prev,
+    .slick-next {
+      font-size: 20px; /* Smaller font size for small devices */
+      width: 40px; /* Smaller arrow buttons */
+      height: 40px;
+    }
+  
+    .carousel-item {
+      height: 200px; /* Smaller fixed height for small devices */
+    }
+  
+    .carousel-image {
+      max-height: 200px; /* Smaller images for small devices */
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .slick-prev,
+    .slick-next {
+      font-size: 22px; /* Medium font size for tablets */
+      width: 45px; /* Medium arrow buttons */
+      height: 45px;
+    }
+  
+    .carousel-item {
+      height: 300px; /* Medium fixed height for tablets */
+    }
+  
+    .carousel-image {
+      max-height: 250px; /* Medium images for tablets */
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    .slick-prev,
+    .slick-next {
+      font-size: 24px; /* Larger font size for desktop */
+      width: 50px; /* Larger arrow buttons */
+      height: 50px;
+    }
+  
+    .carousel-item {
+      height: 400px; /* Larger fixed height for desktop */
+    }
+  
+    .carousel-image {
+      max-height: 300px; /* Larger images for desktop */
+    }
+  }
+  
