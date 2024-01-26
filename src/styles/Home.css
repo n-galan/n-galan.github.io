@@ -171,3 +171,43 @@ background: black; */
     /* padding: 40px;  */
 
 }
+
+.boxingkids-home {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 22%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.groupsoccer-home {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 36%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.coding-home {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top:0px;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.kide-home {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top:20px;
+    left: 57%;
+    transform: translateX(-50%);
+    z-index: 3;
+}

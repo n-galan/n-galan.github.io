@@ -126,6 +126,52 @@
 
   }
 
+  .soccer-program-section-and-image {
+    position: relative; /* This makes it the positioned ancestor for absolute children */
+    height: 400px; /* Example height, adjust as needed to fit your images */
+    display: flex; /* Using flex to manage the layout of children */
+    justify-content: space-between; /* This separates the children on both ends */
+    align-items: center; /* This vertically centers the children */
+    margin: 20px 0; /* Adds some space above and below the container */
+  }
+  
+  .playing-soccer-image {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top:540px;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .Kids-soccer-image {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 540px;
+    right: 20%; /* Adjust this as necessary */
+    z-index: 3;
+  }
+  
+  
+  /* ... existing styles ... */
+  
+  @media (max-width: 768px) {
+    .soccer-program-section-and-image {
+      flex-direction: column;
+    }
+  
+    .playing-soccer-image {
+      order: 0; /* Reset order for mobile view */
+      width: 100%; /* Full width on mobile */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px; /* Space below the image */
+      
+    }
+  }
+  
+
 
   /* Responsive adjustments */
   @media (max-width: 768px) {

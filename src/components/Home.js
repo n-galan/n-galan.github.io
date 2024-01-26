@@ -7,6 +7,10 @@ import KidFootball from '../assets/img/KidFootball.png'
 import PlayingSoccer from '../assets/img/PlayingSoccer.png'
 import KidsSoccer from '../assets/img/KidsSoccer.png'
 import girlbasketball from '../assets/img/girlbasketball.png'
+import boxingkids from '../assets/img/boxingkids.png'
+import groupsoccer from '../assets/img/groupsoccer.png'
+import coding from '../assets/img/Coding.png';
+import kide from '../assets/img/kide.png'; 
 
 import '../styles/Home.css';
 // import '../styles/InfoCards.css';
@@ -40,12 +44,12 @@ const Home = () => {
     ];
     
     const cardData = [
-        { mainTitle: "Boxing", subTitle: "Empower & Transform!", description: <img src={PUBoxingImage} alt="Boxing" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/boxing' },
-        { mainTitle: "BasketBall", subTitle: "Unlock your court dominance", description: <img src={BBPU} alt="BasketBall" style={{maxWidth: '110%', maxHeight: '100%'}} />, navigateTo: '/basketball' },
-        { mainTitle: "Soccer", subTitle: "Mastering Soccer One Kick at a Time!", description: <img src={Soccer} alt="Soccer" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/soccer' },
-        { mainTitle: "Chess", subTitle: "Strategize and outthink your opponent.", description: <img src={PUChess} alt="Chess" style={{maxWidth: '75%', maxHeight: '90%'}} />, navigateTo: '/chess'  },
-        { mainTitle: "STEM", subTitle: "Craft Solutions, Typing One Line at a Time!",description: <img src={Computer} alt="Coding" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/coding' },
-        { mainTitle: "ARTS", subTitle: "Dive into the world of arts, where music and creativity come alive!🎨🎶", description: <img src={MusicPU} alt="Music" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/music' }
+        { mainTitle: "Unbound Sports", subTitle: "Empower & Transform!", description: <img src={PUBoxingImage} alt="Boxing" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/sports' },
+        // { mainTitle: "BasketBall", subTitle: "Unlock your court dominance", description: <img src={BBPU} alt="BasketBall" style={{maxWidth: '110%', maxHeight: '100%'}} />, navigateTo: '/basketball' },
+        // { mainTitle: "Soccer", subTitle: "Mastering Soccer One Kick at a Time!", description: <img src={Soccer} alt="Soccer" style={{maxWidth: '100%', maxHeight: '100%'}} />, navigateTo: '/soccer' },
+        // { mainTitle: "Chess", subTitle: "Strategize and outthink your opponent.", description: <img src={PUChess} alt="Chess" style={{maxWidth: '75%', maxHeight: '90%'}} />, navigateTo: '/chess'  },
+        { mainTitle: "Unbound STEM", subTitle: "Craft Solutions, Typing One Line at a Time!",description: <img src={Computer} alt="Coding" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/tech' },
+        { mainTitle: "Unbound ARTS", subTitle: "Dive into the world of arts, where music and creativity come alive!🎨🎶", description: <img src={MusicPU} alt="Music" style={{maxWidth: '80%', maxHeight: '100%'}} />, navigateTo: '/music' }
     ];
     
     
@@ -58,9 +62,13 @@ const Home = () => {
             cardsRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
+    
     return (
         <div className='home-page'>
+             {/* <img src={kide} alt="Hang Boxing" className="kide-home" />
+            <img src={groupsoccer} alt="Hang Boxing" className="groupsoccer-home" />
+            <img src={coding} alt="Hang Boxing" className="coding-home" />
+            <img src={boxingkids} alt="Hang Boxing" className="boxingkids-home" /> */}
             <h1 className="centeredHeading">Our Mission:</h1>
             <p className='missionStatement'>{missionStatement}</p>
             <Carousel images={imageList} />

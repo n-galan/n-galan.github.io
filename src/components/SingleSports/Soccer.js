@@ -3,6 +3,9 @@ import '../../styles/Soccer.css'; // Make sure the path to your CSS file is corr
 import PlayerImage from '../../assets/img/kidsoccer.png'; // Replace with the path to your soccer player image
 import PlayerImage2 from '../../assets/img/kid2soccer.png'
 import groupsoccer from '../../assets/img/groupsoccer.png'
+import PlayingSoccer from '../../assets/img/PlayingSoccer.png'; // Newly added image
+import kidssoccer from '../../assets/img/KidsSoccer.png'; // Newly added image
+
 
 const Soccer = () => {
   return (
@@ -50,6 +53,14 @@ const Soccer = () => {
         </div>
       </section>
 
+
+      <div className="soccer-program-section-and-image">
+        {/* <div className="soccer-program-section">  </div> */}
+        <img src={PlayingSoccer} alt="Kids Playing Soccer" className="playing-soccer-image" />
+        <img src={kidssoccer} alt="Kids Playing Soccer" className="playing-soccer-image" />
+        {/* <div className="soccer-program-section">  </div> */}
+      </div>
+
       <div className="image-and-text">
         <img src={PlayerImage} alt="Soccer Player" className="player-image" />
         <img src={PlayerImage2} alt="Soccer Player 2" className='player2-image'></img>
@@ -59,7 +70,7 @@ const Soccer = () => {
       <section className="soccer-contact-info">
         <h2>Follow Us and Contact Us</h2>
         <p>Email: info@projectunbound.org</p>
-        <p>Follow us on social media: @ProjectUnbound</p>
+        <p>Follow us on Instagram: @Project_Unbound</p>
       </section>
     </div>
   );
