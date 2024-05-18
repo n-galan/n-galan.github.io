@@ -132,9 +132,6 @@
 
 /* Additional styles or media queries can be added as needed */
 
-
-
-  
 .sport-intro {
   text-align: center;
   margin: 2rem auto;
@@ -170,5 +167,28 @@
 
   .sport-intro p {
     font-size: 0.9rem; /* Slightly smaller to maintain readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-description-pair {
+    flex-direction: column;
+  }
+
+  .sports-card, .sport-description-card {
+    margin: 5px 0; /* Adjust margins for very small screens */
+  }
+
+  .sport-info-button {
+    padding: 6px 10px; /* Smaller padding for very small screens */
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .sport-intro h2 {
+    font-size: 1rem; /* Adjust font size for very small screens */
+  }
+
+  .sport-intro p {
+    font-size: 0.8rem; /* Adjust font size for very small screens */
   }
 }

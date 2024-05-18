@@ -1,28 +1,40 @@
-
 .coming-soon-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* High z-index to ensure it's above all other content */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* High z-index to ensure it's above all other content */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent background */
+}
+
+.coming-soon-image {
+  max-width: 50%; /* Adjust the size as needed */
+  max-height: 50%; /* Adjust the size as needed */
+  border-radius: 20px; /* Optional rounded corners */
+  animation: float 5s ease-in-out infinite; /* Optional floating animation */
+}
+
+/* Optional: Floating animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .coming-soon-image {
-    max-width: 50%; /* Adjust the size as needed */
-    max-height: 50%; /* Adjust the size as needed */
-    /* Remove opacity if you want a solid image */
-    border-radius: 20px; /* Optional rounded corners */
-    /* Optional floating animation */
-    animation: float 5s ease-in-out infinite;
+      max-width: 70%; /* Adjust the size for smaller screens */
+      max-height: 70%; /* Adjust the size for smaller screens */
   }
-  
-  /* Optional: Floating animation keyframes */
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 480px) {
+  .coming-soon-image {
+      max-width: 90%; /* Adjust the size for very small screens */
+      max-height: 90%; /* Adjust the size for very small screens */
   }
+}

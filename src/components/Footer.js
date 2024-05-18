@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>© 2023 Project Unbound. All rights reserved.</p>
+                <p>© 2024 Project Unbound. All rights reserved.</p>
             </div>
         </div>
     );

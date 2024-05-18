@@ -22,7 +22,7 @@ const InfoCard = ({ mainTitle, subTitle, description, navigateTo }) => {
             </div>
             <div style={{ position: 'absolute', bottom: '10px', width: '100%', textAlign: 'center' }}>
                 {/* The Button onClick is now updated to use handleClick */}
-                <Button variant="primary" onClick={handleClick}>Learn More</Button>
+                <Button variant="primary" className='CardButton' onClick={handleClick}>Learn More</Button>
             </div>
         </div>
     );

@@ -7,7 +7,7 @@
 .missionStatement {
     text-align: center;
     transition: color 0.3s ease;
-    padding: 0px 40px;
+    padding: 0 40px;
 }
 
 .centeredHeading {
@@ -27,8 +27,6 @@
     color: #44D9E8;  /* Adjust this color if needed */
 }
 
-
-
 /* Mobile styles */
 @media only screen and (max-width: 600px) {
     .offerHeading {
@@ -40,6 +38,12 @@
     .programDescription {
         padding: 0 10px; /* Padding to prevent text from touching the edges */
         font-size: 14px; /* Smaller font size for readability on mobile */
+    }
+    .carousel-container {
+        padding: 10px 0;
+    }
+    .carousel-item img {
+        height: 200px; /* Adjust height for mobile devices */
     }
     /* Adjust other elements as needed for mobile layout */
 }
@@ -54,19 +58,24 @@
         padding: 0 20px; /* Increased padding for tablets */
         font-size: 16px; /* Adjusted font size for tablets */
     }
+    .carousel-container {
+        padding: 15px 0;
+    }
+    .carousel-item img {
+        height: 250px; /* Adjust height for tablets */
+    }
     /* ... other tablet styles ... */
 }
 
-
+/* Small screens */
 @media only screen and (max-width: 320px) {
-       .offerHeading {
-        font-size: 20px; /* Smaller font size for small screens */
-        margin-top: 15px; /* Reduced margin */
-        margin-bottom: 10px;
+    .offerHeading {
+        font-size: 16px; /* Smaller font size for small screens */
+        margin-top: 10px; /* Reduced margin */
+        margin-bottom: 5px;
         /* ... other styles */
     }
 }
-
 
 /* Desktop styles */
 @media only screen and (min-width: 1025px) {
@@ -78,6 +87,12 @@
         padding: 0 30px; /* Increased padding for desktops */
         font-size: 18px; /* Larger font size for desktops */
     }
+    .carousel-container {
+        padding: 20px 0;
+    }
+    .carousel-item img {
+        height: 300px; /* Default height for images */
+    }
     /* ... additional desktop styles ... */
 }
 
@@ -86,14 +101,13 @@
     /* ... additional large desktop styles ... */
 }
 
-
 .arrow-down {
     display: inline-block;
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 40px solid #000;  /* Arrow color */
+    border-top: 40px solid white;  /* Arrow color */
     margin: 10px auto;
     cursor: pointer;  /* Making arrow clickable */
 }
@@ -121,23 +135,22 @@
     align-items: center;
     cursor: pointer;
     margin-bottom: 20px;
-    color: #000;
+    color: white;
     font-weight: bolder;
 }
 
 .centeredHeading {
-    color: black;
+    color: white;
     font-weight: bolder;
 }
 
 .programDescription {
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 .programsHeading {
-
-    color: #000;
+    color: white;
     font-weight: bolder;
 }
 
@@ -153,23 +166,6 @@
 
 .home-page {
     background: linear-gradient(to bottom, black, black, #78C2AD, #78C2AD);
-    /* min-height: 100vh; 
-background: black; */
-
-}
-
-
-.centeredHeading {
-
-    color: white;
-
-
-}
-
-.missionStatement p {
-
-    /* padding: 40px;  */
-
 }
 
 .boxingkids-home {
@@ -196,7 +192,7 @@ background: black; */
     width: 120px;
     height: auto;
     position: absolute;
-    top:0px;
+    top: 0px;
     left: 48%;
     transform: translateX(-50%);
     z-index: 3;
@@ -206,7 +202,7 @@ background: black; */
     width: 120px;
     height: auto;
     position: absolute;
-    top:20px;
+    top: 20px;
     left: 57%;
     transform: translateX(-50%);
     z-index: 3;

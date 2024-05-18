@@ -1,63 +1,86 @@
 .navbar-primary {
-    background-color: #78c2ad;
+  background-color: #78c2ad;
 }
-  
+
 .navbar-primary .nav-link {
-    color: black;
-    font-weight: bolder;
+  color: black;
+  font-weight: bolder;
 }
 
 .navbar .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
-/* navbar single page colors  */
+/* Navbar single page colors */
 .navbar-sports {
-    background-color: #6cc3d5;  /* Replace with your desired color */
-    font-weight: bolder;
+  background-color: #6cc3d5;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  }
+.navbar-music {
+  background-color: #F3969A;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-music {
-    background-color: #F3969A;  /* Replace with your desired color */
-    font-weight: bolder;
-    
-  }
+.navbar-boxing {
+  background-color: #6cc3d5;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-boxing {
-    background-color: #6cc3d5;  /* Replace with your desired color */
-    font-weight: bolder;
-    
-  }
+.navbar-soccer {
+  background-color: #6cc3d5;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-soccer {
-    background-color: #6cc3d5;  /* Replace with your desired color */
-    font-weight: bolder;
-  }
+.navbar-chess {
+  background-color: #6cc3d5;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-chess {
-    background-color: #6cc3d5;  /* Replace with your desired color */
-    font-weight: bolder;
-    
-  }
+.navbar-basketball {
+  background-color: #6cc3d5;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-basketball {
-    background-color: #6cc3d5;  /* Replace with your desired color */
-    font-weight: bolder;
-    
-  }
+.navbar-resources {
+  background-color: #78c2ad;  /* Replace with your desired color */
+  font-weight: bolder;
+}
 
-  .navbar-resources {
-    background-color: #78c2ad;  /* Replace with your desired color */
-    font-weight: bolder;
-    
+.navbar-default {
+  background-color: #78c2ad;  /* Replace with your default color */
+}
+
+.navbar-default {
+  background-color: #9178c2;  /* Replace with your default color */
+}
+
+/* Center the navigation items when the navbar is collapsed */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align items to the right on regular screens */
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      flex-direction: column;
+      justify-content: center; /* Center items when the navbar is collapsed */
   }
   
-  .navbar-default {
-    background-color: #78c2ad;  /* Replace with your default color */
+  .navbar-collapse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   
-  .navbar-default {
-    background-color: #9178c2;  /* Replace with your default color */
+  .navbar-collapse.collapse.show {
+      text-align: center;
   }
-  
+}
+
+.navbar-nav .nav-item {
+  margin: 5px 10px; /* Adjust as needed */
+}

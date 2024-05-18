@@ -13,14 +13,9 @@
 }
 
 .footer-content h4 {
-
-    color:black;
+    color: black;
     font-weight: bold;
-    
 }
-
-
-
 
 .footer-section {
     flex: 1;
@@ -30,7 +25,6 @@
 .footer-section li {
     color: black;
     font-weight: bold;
-
 }
 
 .footer-bottom {
@@ -43,6 +37,7 @@
     list-style: none;
     display: flex;
     gap: 10px;
+    padding: 0;
 }
 
 .social-list a {
@@ -60,62 +55,106 @@
 }
 
 .footer-tech {
-    background-color: #9178c2;  /* Color for the sports page */
+    background-color: #9178c2;  /* Color for the tech page */
 }
 
 .footer-music {
-    background-color: #F3969A;  /* Color for the sports page */
+    background-color: #F3969A;  /* Color for the music page */
 }
 
 .footer-boxing {
-    background-color: #6cc3d5;  /* Color for the sports page */
+    background-color: #6cc3d5;  /* Color for the boxing page */
 }
 
 .footer-soccer {
-    background-color: #6cc3d5;  /* Color for the sports page */
+    background-color: #6cc3d5;  /* Color for the soccer page */
 }
+
 .footer-basketball {
-    background-color: #6cc3d5;  /* Color for the sports page */
+    background-color: #6cc3d5;  /* Color for the basketball page */
 }
 
 .footer-chess {
-    background-color: #6cc3d5;  /* Color for the sports page */
+    background-color: #6cc3d5;  /* Color for the chess page */
 }
 
-.footer-coding68  {
-    background-color: #9178c2;  /* Color for the sports page */
+.footer-coding68 {
+    background-color: #9178c2;  /* Color for the coding page */
 }
-
 
 .footer-engineering {
-    background-color: #9178c2;  /* Color for the sports page */
+    background-color: #9178c2;  /* Color for the engineering page */
 }
-
-
-
 
 .footer-default {
     background-color: #78c2ad;  /* Default color for other pages */
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-
 
 .instagram-icon {
     width: 30px; /* Adjust as needed */
     height: 30px; /* Adjust as needed */
     margin-right: 3px;
-
 }
-
 
 .instagram-name {
     vertical-align: middle;
     color: black; /* Adjust the color as per your theme */
     font-weight: bold;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .social-list {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        padding: 10px 0;
+    }
+
+    .footer-content h4, .footer-section li {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        margin: 5px 0;
+    }
+
+    .footer-content h4 {
+        font-size: 14px;
+    }
+
+    .footer-section li {
+        font-size: 14px;
+    }
+
+    .instagram-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .instagram-name {
+        font-size: 14px;
+    }
 }

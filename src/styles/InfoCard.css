@@ -1,9 +1,9 @@
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 15px BLACK, 0 0 25px black, 0 0 35px black, 0 0 45px black;
+        box-shadow: 0 0 15px black, 0 0 25px black, 0 0 35px black, 0 0 45px black;
     }
     50% {
-        box-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px BLACK, 0 0 50px black;
+        box-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black;
     }
     100% {
         box-shadow: 0 0 15px black, 0 0 25px black, 0 0 35px black, 0 0 45px black;
@@ -41,4 +41,19 @@
     bottom: 20px;
     left: 50%; 
     transform: translateX(-50%);
+    background-color: #78c2ad; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.glowing-card button:hover {
+    background-color: #66a299; /* Slightly darker shade for hover effect */
+}
+
+.CardButton {
+    background-color: #78c2ad;
 }
