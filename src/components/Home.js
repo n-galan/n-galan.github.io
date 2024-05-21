@@ -1,12 +1,14 @@
 import React, { useRef } from 'react';
 import Carousel from './Carousel';
 import Symbol from '../assets/img/PU.png';
-import Image4 from '../assets/img/hands.jpg';
+import Image4 from '../assets/img/hands.png';
 import kidboxing from '../assets/img/KidBoxing.png';
 import KidFootball from '../assets/img/KidFootball.png';
 import PlayingSoccer from '../assets/img/PlayingSoccer.png';
 import KidsSoccer from '../assets/img/KidsSoccer.png';
 import girlbasketball from '../assets/img/girlbasketball.png';
+import Cboxing from '../assets/img/CBoxing.png'
+import CboxingTwo from '../assets/img/CboxingTwo.png'
 // import boxingkids from '../assets/img/boxingkids.png';
 // import coding from '../assets/img/Coding.png';
 // import kide from '../assets/img/kide.png';
@@ -25,13 +27,16 @@ const Home = () => {
   const programDescription = "At Project Unbound, we champion the holistic well-being of New York's youth and young adults, emphasizing both physical and mental vitality. Recognizing the undeniable synergy between body and mind, our tailor-made programs are meticulously crafted to bolster mental resilience and physical prowess. Dive into a transformative experience, where health isn't just a goal—it's a vibrant journey we embark upon together. Join us in reshaping the future of our city's young souls, one empowering session at a time.";
 
   const imageList = [
-    { src: Symbol, alt: 'Description 1' },
+
     { src: Image4, alt: 'Description 2' },
-    { src: kidboxing, alt: 'Description 3' },
+    { src: Symbol, alt: 'Description 1' },
     { src: KidFootball, alt: 'Description 4' },
-    { src: KidsSoccer, alt: 'Description 5' },
     { src: PlayingSoccer, alt: 'Description 6' },
-    { src: girlbasketball, alt: 'Description 7' }
+    { src: KidsSoccer, alt: 'Description 5' },
+    { src: girlbasketball, alt: 'Description 7' },
+    { src: Cboxing, alt: 'Decription 8'},
+    { src: kidboxing, alt: 'Description 3' },
+    { src: CboxingTwo, alt: 'Decription 8'}
   ];
 
   const cardData = [

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/Boxing.css'; // Make sure to include your CSS file for styling
 import PersonBImage from '../../assets/img/PersonB.png';
 import HangBoxingImage from '../../assets/img/HangBoxing.png'; // Import the new image
-import KidBoxingImage from '../../assets/img/KidBoxing.png';
+// import KidBoxingImage from '../../assets/img/KidBoxing.png';
 import boxingkids from '../../assets/img/boxingkids.png'
 
 
@@ -71,7 +71,7 @@ const Boxing = () => {
       <section className="contact-info">
         <h2>Follow Us and Contact Us</h2>
         <p>Email: info@projectunbound.org</p>
-        <p>Follow us on social media: @ProjectUnbound</p>
+        <p>Follow us on social media: @Project_Unbound</p>
       </section>
     </div>
   );

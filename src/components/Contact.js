@@ -8,7 +8,7 @@ const ContactUs = () => {
     <div className="contact-us-container">
       <h2>Contact Us</h2>
       <div className="contact-options">
-        <a href="mailto:info@yourdomain.com" className="contact-option">
+        <a href="mailto:info@projectunbound.org" className="contact-option">
           <img src={emailIcon} alt="Email" />
           <span>info@ProjectUnbound.org</span>
         </a>
