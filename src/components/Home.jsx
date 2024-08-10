@@ -5,7 +5,11 @@ import InstagramEmbed from "./InstagramEmbed"; // Ensure this is the correct pat
 import instagramPosts from "./InstagramPosts";
 import "../styles/Home.css";
 
+
 // Assets
+import AI1 from "../assets/img/AI1.webp"
+import AI2 from '../assets/img/AI2.webp'
+import AI3 from '../assets/img/AI3.webp'
 import Symbol from "../assets/img/PU.png";
 import Image4 from "../assets/img/hands.png";
 import kidboxing from "../assets/img/KidBoxing.png";
@@ -56,6 +60,9 @@ const Home = () => {
     { src: AWS3, alt: "Description 10" },
     { src: AWS2, alt: "Description 11" },
     { src: AWSus, alt: "Description 12" },
+    {src: AI1, alt: 'Description 13'},
+    {src: AI2, alt: 'Description 14'},
+    {src: AI3, alt: 'Description 15'},
   ];
 
   const cardData = [
