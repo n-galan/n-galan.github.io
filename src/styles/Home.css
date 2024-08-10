@@ -17,7 +17,7 @@
 .offerHeading {
     cursor: pointer;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
     transition: color 0.3s ease;
@@ -117,7 +117,7 @@
 }
 
 .our-programs-heading {
-    font-size: 1.8rem;  /* Increase font-size */
+    font-size: 40px;  /* Increase font-size */
     font-weight: bold;
     margin-top: 5px;
     text-align: center;  /* Center the heading */
@@ -152,11 +152,13 @@
 .programsHeading {
     color: white;
     font-weight: bolder;
+    font-size: 40px;
 }
 
 .offerHeading {
     color: white;
     font-weight: bolder;
+    font-size: 40px;
 }
 
 .missionStatement {
@@ -207,3 +209,41 @@
     transform: translateX(-50%);
     z-index: 3;
 }
+
+.instagram-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjust the gap between posts */
+    padding: 20px;
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: 0 auto; /* Center the grid */
+    text-align: center; /* Center the content inside the grid */
+  }
+  
+.instagram-media {
+  border: 1px solid #ccc; /* Optional: adds a subtle border around each post */
+  border-radius: 8px; /* Optional: rounds the corners of the posts */
+  overflow: hidden; /* Ensures no content spills outside the border */
+}
+
+@media only screen and (max-width: 600px) {
+  .instagram-feed {
+    grid-template-columns: 1fr; /* Stacks the posts vertically on smaller screens */
+  }
+}
+
+.instagram-media:hover {
+  transform: scale(1.03); /* Slightly enlarges the post when hovered */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Center the Instagram section heading */
+.instagram-section-heading {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    margin-top: 40px;
+    font-size: 40px;
+}
+  

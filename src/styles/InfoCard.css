@@ -21,11 +21,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     position: relative;
     animation: glowing 1.5s infinite alternate;  /* Add this line for the glowing effect */
-}
+} 
 
 .glowing-card:hover {
     box-shadow: 0 0 20px #44D9E8, 0 0 30px #44D9E8, 0 0 40px #44D9E8, 0 0 55px #44D9E8;
