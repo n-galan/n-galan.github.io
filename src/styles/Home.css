@@ -218,24 +218,34 @@
     max-width: 1200px; /* Maximum width of the grid */
     margin: 0 auto; /* Center the grid */
     text-align: center; /* Center the content inside the grid */
-  }
-  
+}
+
 .instagram-media {
-  border: 1px solid #ccc; /* Optional: adds a subtle border around each post */
-  border-radius: 8px; /* Optional: rounds the corners of the posts */
-  overflow: hidden; /* Ensures no content spills outside the border */
+    border: 1px solid #ccc; /* Optional: adds a subtle border around each post */
+    border-radius: 8px; /* Optional: rounds the corners of the posts */
+    overflow: hidden; /* Ensures no content spills outside the border */
+}
+
+/* Hides the like count section */
+.instagram-media ._aacl ._aacu {
+    display: none !important;
+}
+
+/* Hides the comments section (if you want to hide that too) */
+.instagram-media ._aacl ._aacu:nth-child(2) {
+    display: none !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .instagram-feed {
-    grid-template-columns: 1fr; /* Stacks the posts vertically on smaller screens */
-  }
+    .instagram-feed {
+        grid-template-columns: 1fr; /* Stacks the posts vertically on smaller screens */
+    }
 }
 
 .instagram-media:hover {
-  transform: scale(1.03); /* Slightly enlarges the post when hovered */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.03); /* Slightly enlarges the post when hovered */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Center the Instagram section heading */
@@ -246,4 +256,91 @@
     margin-top: 40px;
     font-size: 40px;
 }
+
+/* Mission statement container styling */
+.mission-container {
+    background: linear-gradient(135deg, #e8f5e9, #e0f7fa); /* Soft gradient background */
+    padding: 5vw; /* Use viewport width for dynamic padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 5vh auto; /* Use viewport height for dynamic vertical margin */
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Dynamic font size */
+    line-height: 1.8;
+    color: #333;
+  }
   
+  
+  .mission-container h2 {
+    text-align: center;
+    color: #00796b; /* Dark teal for heading */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .mission-container ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    
+  }
+  
+  .mission-container li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #004d40; /* Teal for list items */
+  }
+  
+  .mission-container li::before {
+    content: '•'; /* Custom bullet */
+    color: #ff6f00; /* Orange for bullet point */
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 1.5rem;
+    content: none !important;
+  }
+
+  .mission-container li .emoji {
+    font-size: 2rem; /* Adjust size as needed */
+    vertical-align: middle; /* Aligns the emoji with the text */
+    margin-right: 10px; /* Adds spacing between the emoji and the text */
+  }
+  
+  
+  .call-to-action {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ff6f00;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .call-to-action:hover {
+    background-color: #e65100;
+    transform: scale(1.05);
+  }
+  
+  
+  .mission-container .program-list p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-container {
+      padding: 20px;
+      font-size: 1rem;
+    }
+  
+    .call-to-action {
+      font-size: 1.2rem;
+    }
+  }

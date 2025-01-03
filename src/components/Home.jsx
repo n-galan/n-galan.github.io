@@ -5,29 +5,8 @@ import InstagramEmbed from "./InstagramEmbed"; // Ensure this is the correct pat
 import instagramPosts from "./InstagramPosts";
 import "../styles/Home.css";
 
-
-// Assets
-import AI1 from "../assets/img/AI1.webp"
-import AI2 from '../assets/img/AI2.webp'
-import AI3 from '../assets/img/AI3.webp'
-import Symbol from "../assets/img/PU.png";
-import Image4 from "../assets/img/hands.png";
-import kidboxing from "../assets/img/KidBoxing.png";
-import KidFootball from "../assets/img/KidFootball.png";
-import PlayingSoccer from "../assets/img/PlayingSoccer.png";
-import KidsSoccer from "../assets/img/KidsSoccer.png";
-import girlbasketball from "../assets/img/girlbasketball.png";
-import Cboxing from "../assets/img/CBoxing.png";
-import CboxingTwo from "../assets/img/CboxingTwo.png";
-import AWSgroup from "../assets/img/AWSGroup.webp";
-import AWS1 from "../assets/img/AWS1.webp";
-import AWS2 from "../assets/img/AWS2.webp";
-import AWS3 from "../assets/img/AWS3.webp";
-import AWS4 from "../assets/img/AWS4.webp";
-import AWSus from "../assets/img/AWSus.webp";
-import PUBoxingImage from "../assets/img/PU Boxing.png";
-import MusicPU from "../assets/img/Musix PU.png";
-import Computer from "../assets/img/PU Computer.png";
+// Import all assets from the assets folder
+import * as Images from "../assets/img";
 
 const Home = () => {
   const cardsRef = useRef(null);
@@ -38,31 +17,71 @@ const Home = () => {
     }
   };
 
-  const missionStatement =
-    "Ignite Passion with Project Unbound: Empowering New York's Youth! Dive into the heart of New York City with Project Unbound, where we're revolutionizing education and empowerment for our youth. Through dynamic, year-round enrichment programs – from the discipline of Boxing and the agility of Soccer to the strategy of Chess and the innovation of Technology – we're unlocking unparalleled opportunities. At every corner of our city, in schools and community hubs, we're turning young enthusiasts into future trailblazers. Our mission? To offer transformative experiences that bolster both physical prowess and mental resilience. With Project Unbound, it's not just about nurturing talents; it's about shaping the tech-savvy leaders of tomorrow. Join the movement. Fuel the future. Be part of Project Unbound's transformative journey.";
-
-  const programDescription =
-    "At Project Unbound, we champion the holistic well-being of New York's youth and young adults, emphasizing both physical and mental vitality. Recognizing the undeniable synergy between body and mind, our tailor-made programs are meticulously crafted to bolster mental resilience and physical prowess. Dive into a transformative experience, where health isn't just a goal—it's a vibrant journey we embark upon together. Join us in reshaping the future of our city's young souls, one empowering session at a time.";
+  const missionStatement = (
+    <div className="mission-container">
+      <h2>Discover Project Unbound</h2>
+      <p>
+        Empowering New York’s Youth with Passion and Purpose! At Project Unbound,
+        we go beyond teaching skills – we transform lives.
+      </p>
+      <p>
+        Through our dynamic, year-round enrichment programs, we inspire
+        creativity, teamwork, and resilience in New York’s youth. Our mission is
+        to create a space where kids can move, learn, and grow through three
+        incredible pathways:
+      </p>
+      <ul>
+        <li>
+        <span className="emoji">✨</span><strong>Unbound Sports:</strong> From the discipline of boxing to
+          the agility of soccer and the strategy of chess, our sports programs
+          build physical strength and mental toughness, instilling valuable life
+          skills every step of the way.
+        </li>
+        <li>
+        <span className="emoji">💡</span><strong> Unbound STEM:</strong> For tomorrow’s innovators, our
+          hands-on coding, engineering, and problem-solving activities make science
+          and technology accessible, exciting, and fun.
+        </li>
+        <li>
+        <span className="emoji">🎨</span><strong>Coming Soon – Unbound Arts:</strong> Unleash creativity
+          through painting, performing, and other artistic expressions. We’re
+          creating spaces for imagination and self-expression to thrive.
+        </li>
+      </ul>
+      <p>
+        What truly sets us apart? Every one of our programs is powered by{' '}
+        <strong style={{ color: '#f39c12' }}>Social Emotional Learning (SEL)</strong>. We’re not just teaching
+        skills – we’re helping kids understand themselves, manage their emotions,
+        and work effectively in a team. By building confidence, empathy, and
+        collaboration, we’re shaping the leaders of tomorrow.
+      </p>
+      <p className="call-to-action">
+        Join the Project Unbound movement and help us ignite the next generation
+        of trailblazers. Together, let’s fuel the future with passion, purpose,
+        and a whole lot of fun!
+      </p>
+    </div>
+  );
 
   const imageList = [
-    { src: Image4, alt: "Description 2" },
-    { src: Symbol, alt: "Description 1" },
-    { src: KidFootball, alt: "Description 4" },
-    { src: PlayingSoccer, alt: "Description 6" },
-    { src: KidsSoccer, alt: "Description 5" },
-    { src: girlbasketball, alt: "Description 7" },
-    { src: Cboxing, alt: "Description 8" },
-    { src: kidboxing, alt: "Description 3" },
-    { src: CboxingTwo, alt: "Description 8" },
-    { src: AWS4, alt: "Description 9" },
-    { src: AWSgroup, alt: "Description 9" },
-    { src: AWS1, alt: "Description 10" },
-    { src: AWS3, alt: "Description 10" },
-    { src: AWS2, alt: "Description 11" },
-    { src: AWSus, alt: "Description 12" },
-    {src: AI1, alt: 'Description 13'},
-    {src: AI2, alt: 'Description 14'},
-    {src: AI3, alt: 'Description 15'},
+    { src: Images.Image4, alt: "Description 2" },
+    { src: Images.Symbol, alt: "Description 1" },
+    { src: Images.KidFootball, alt: "Description 4" },
+    { src: Images.PlayingSoccer, alt: "Description 6" },
+    { src: Images.KidsSoccer, alt: "Description 5" },
+    { src: Images.girlbasketball, alt: "Description 7" },
+    { src: Images.Cboxing, alt: "Description 8" },
+    { src: Images.kidBoxing, alt: "Description 3" },
+    { src: Images.CboxingTwo, alt: "Description 8" },
+    { src: Images.AWS4, alt: "Description 9" },
+    { src: Images.AWSgroup, alt: "Description 9" },
+    { src: Images.AWS1, alt: "Description 10" },
+    { src: Images.AWS3, alt: "Description 10" },
+    { src: Images.AWS2, alt: "Description 11" },
+    { src: Images.AWSus, alt: "Description 12" },
+    { src: Images.AI1, alt: 'Description 13' },
+    { src: Images.AI2, alt: 'Description 14' },
+    { src: Images.AI3, alt: 'Description 15' },
   ];
 
   const cardData = [
@@ -71,7 +90,7 @@ const Home = () => {
       subTitle: "Empower & Transform!",
       description: (
         <img
-          src={PUBoxingImage}
+          src={Images.PUBoxingImage}
           alt="Boxing"
           style={{ maxWidth: "100%", maxHeight: "100%" }}
         />
@@ -83,7 +102,7 @@ const Home = () => {
       subTitle: "Craft Solutions, Typing One Line at a Time!",
       description: (
         <img
-          src={Computer}
+          src={Images.Computer}
           alt="Coding"
           style={{ maxWidth: "80%", maxHeight: "100%" }}
         />
@@ -96,7 +115,7 @@ const Home = () => {
         "Dive into the world of arts, where music and creativity come alive!🎨🎶",
       description: (
         <img
-          src={MusicPU}
+          src={Images.MusicPU}
           alt="Music"
           style={{ maxWidth: "80%", maxHeight: "100%" }}
         />
@@ -107,8 +126,11 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <h1 className="centeredHeading">Our Mission:</h1>
-      <p className="missionStatement">{missionStatement}</p>
+      {/* <h1 className="centeredHeading">
+        Discover Project Unbound: <br />
+        Empowering New York’s Youth with Passion and Purpose!
+      </h1> */}
+      {missionStatement}
       <Carousel images={imageList} />
       <h2 className="offerHeading" onClick={scrollToCards}>
         What We Offer:
@@ -117,7 +139,6 @@ const Home = () => {
         <span className="downArrow">&#8595;</span>
         <h2 className="programsHeading">Our Three Umbrellas</h2>
       </div>
-      <p className="programDescription">{programDescription}</p>
       <div
         className="card-container"
         ref={cardsRef}

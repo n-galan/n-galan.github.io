@@ -1,0 +1,22 @@
+// src/assets/img/index.js
+export { default as AI1 } from './AI1.webp';
+export { default as AI2 } from './AI2.webp';
+export { default as AI3 } from './AI3.webp';
+export { default as Symbol } from './PU.png';
+export { default as Image4 } from './hands.png';
+export { default as KidFootball } from './KidFootball.png';
+export { default as PlayingSoccer } from './PlayingSoccer.png';
+export { default as KidsSoccer } from './KidsSoccer.png';
+export { default as girlbasketball } from './girlbasketball.png';
+export { default as Cboxing } from './CBoxing.png';
+export { default as CboxingTwo } from './CboxingTwo.png';
+export { default as AWSgroup } from './AWSGroup.webp';
+export { default as AWS1 } from './AWS1.webp';
+export { default as AWS2 } from './AWS2.webp';
+export { default as AWS3 } from './AWS3.webp';
+export { default as AWS4 } from './AWS4.webp';
+export { default as AWSus } from './AWSus.webp';
+export { default as PUBoxingImage } from './PU Boxing.png';
+export { default as MusicPU } from './Musix PU.png';
+export { default as Computer } from './PU Computer.png';
+export { default as kidBoxing } from './KidBoxing.png';
