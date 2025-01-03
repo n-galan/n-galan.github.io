@@ -32,13 +32,13 @@ const Home = () => {
       </p>
       <ul>
         <li>
-        <span className="emoji">✨</span><strong>Unbound Sports:</strong> From the discipline of boxing to
+        <span className="emoji">🏆</span><strong>Unbound Sports:</strong> From the discipline of boxing to
           the agility of soccer and the strategy of chess, our sports programs
           build physical strength and mental toughness, instilling valuable life
           skills every step of the way.
         </li>
         <li>
-        <span className="emoji">💡</span><strong> Unbound STEM:</strong> For tomorrow’s innovators, our
+        <span className="emoji">⚙️</span><strong> Unbound STEM:</strong> For tomorrow’s innovators, our
           hands-on coding, engineering, and problem-solving activities make science
           and technology accessible, exciting, and fun.
         </li>
