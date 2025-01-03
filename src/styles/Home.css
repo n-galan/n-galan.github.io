@@ -263,7 +263,7 @@
     padding: 5vw; /* Use viewport width for dynamic padding */
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 5vh auto; /* Use viewport height for dynamic vertical margin */
     font-size: clamp(1rem, 2vw, 1.2rem); /* Dynamic font size */
     line-height: 1.8;
